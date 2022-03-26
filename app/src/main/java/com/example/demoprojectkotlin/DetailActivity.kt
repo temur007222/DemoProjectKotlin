@@ -15,9 +15,9 @@ class DetailActivity: AppCompatActivity() {
     }
     private fun initViews(){
         val tv_detail = findViewById<TextView>(R.id.tv_detail)
-        val user = intent.getSerializableExtra("user")
-        Log.d(TAG,user.toString())
+        val name = intent.getSerializableExtra("name and age: ")
+        Log.d(TAG,name.toString())
 
-        tv_detail.text = user.toString()
+        tv_detail.text = name.toString()
     }
 }
